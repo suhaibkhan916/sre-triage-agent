@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sre-triage-agent"
+version = "1.0.0"
+description = "Deterministic SRE incident-triage agent over auth and application logs, with an optional LLM narration layer"
+requires-python = ">=3.10"
+dependencies = []  # standard library only, on purpose
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[project.scripts]
+sre-agent = "sre_agent.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

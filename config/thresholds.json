@@ -1,0 +1,1 @@
+{"failed_login_threshold": 10, "credential_stuffing_users": 5, "server_error_ratio": 0.2, "p95_latency_ms": 2000}
